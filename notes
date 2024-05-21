@@ -1,0 +1,7 @@
+// 
+//tsc --init
+
+// dest file    tsc -watch
+
+// when we do tsc index.ts  it generate .js file in same folder
+// using tsc -w  it generate .js file in dest folder
