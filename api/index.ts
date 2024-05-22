@@ -1,15 +1,37 @@
-class User
+interface takePhoto {
+    cameraMode: string
+    filter: string
+    brust: number
+}
+
+interface story
 {
-    public name:string;
-    email:string
-    private  readonlybranch:string="CSE"
-    constructor(name:string, email:string)
+    takeStory():void
+}
+
+
+class Instagram implements takePhoto {
+    constructor(
+      public cameraMode: string,
+      public filter: string,
+      public brust: number
+    )
+    {}
+    takeStory():void
     {
-        this.name=name;
-        this.email=email
+        console.log('this is my story')
     }
 }
 
-const user=new User('krishna','krishna@gmail.com')
+class Youtube implements takePhoto
+{
+    constructor(
+        public cameraMode: string,
+        public filter: string,
+        public brust: number,
+        public video:string
+    )
+    {
 
-//console.log(user.branch)
+    }
+}

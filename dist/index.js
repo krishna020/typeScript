@@ -1,10 +1,19 @@
 "use strict";
-class User {
-    constructor(name, email) {
-        this.readonlybranch = "CSE";
-        this.name = name;
-        this.email = email;
+class Instagram {
+    constructor(cameraMode, filter, brust) {
+        this.cameraMode = cameraMode;
+        this.filter = filter;
+        this.brust = brust;
+    }
+    takeStory() {
+        console.log('this is my story');
     }
 }
-const user = new User('krishna', 'krishna@gmail.com');
-//console.log(user.branch)
+class Youtube {
+    constructor(cameraMode, filter, brust, video) {
+        this.cameraMode = cameraMode;
+        this.filter = filter;
+        this.brust = brust;
+        this.video = video;
+    }
+}

@@ -10,6 +10,6 @@ class User1
     }
 }
 
-const user1=new User('krishna','krishna@gmail.com')
+const user1=new User1('krishna','krishna@gmail.com')
 
 //console.log(user.branch)
