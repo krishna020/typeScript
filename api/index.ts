@@ -1,37 +1,30 @@
-interface takePhoto {
-    cameraMode: string
-    filter: string
-    brust: number
-}
+// use of abstract
+//differ  between interface and abstract
 
-interface story
-{
-    takeStory():void
-}
+abstract class cameraMode{
+    public name:string
 
-
-class Instagram implements takePhoto {
-    constructor(
-      public cameraMode: string,
-      public filter: string,
-      public brust: number
-    )
-    {}
-    takeStory():void
+    constructor(name:string)
     {
-        console.log('this is my story')
+        this.name=name
+    }
+
+    abstract showPhoto():void
+
+    public showHiddenPhoto()
+    {
+        console.log('hii hidden photo')
     }
 }
 
-class Youtube implements takePhoto
+class User extends cameraMode
 {
-    constructor(
-        public cameraMode: string,
-        public filter: string,
-        public brust: number,
-        public video:string
-    )
+    constructor(name:string)
     {
+        super(name)
+    }
 
+    public showPhoto(): void {
+        console.log('hii')
     }
 }

@@ -1,19 +1,19 @@
 "use strict";
-class Instagram {
-    constructor(cameraMode, filter, brust) {
-        this.cameraMode = cameraMode;
-        this.filter = filter;
-        this.brust = brust;
+// use of abstract
+//differ  between interface and abstract
+class cameraMode {
+    constructor(name) {
+        this.name = name;
     }
-    takeStory() {
-        console.log('this is my story');
+    showHiddenPhoto() {
+        console.log('hii hidden photo');
     }
 }
-class Youtube {
-    constructor(cameraMode, filter, brust, video) {
-        this.cameraMode = cameraMode;
-        this.filter = filter;
-        this.brust = brust;
-        this.video = video;
+class User extends cameraMode {
+    constructor(name) {
+        super(name);
+    }
+    showPhoto() {
+        console.log('hii');
     }
 }
