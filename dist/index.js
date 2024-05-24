@@ -1,19 +1,15 @@
 "use strict";
-// use of abstract
-//differ  between interface and abstract
-class cameraMode {
-    constructor(name) {
-        this.name = name;
-    }
-    showHiddenPhoto() {
-        console.log('hii hidden photo');
-    }
+function another(val1, val2) {
+    return {
+        val1,
+        val2
+    };
 }
-class User extends cameraMode {
-    constructor(name) {
-        super(name);
-    }
-    showPhoto() {
-        console.log('hii');
-    }
+function another2(val1, val2) {
+    return {
+        val1,
+        val2
+    };
 }
+console.log(another(3, 4));
+console.log(another2(3, 5));
